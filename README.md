@@ -46,6 +46,7 @@ Hello and welcome to this git. It is being used to support the development of a 
 
 ## Data Diagram
 
+![image](https://github.com/user-attachments/assets/32690ffd-8735-4be1-a17c-01223ba29eeb)
 
 
 <!-- View repository and user information, control your notifications and even manage your issues and pull requests. Built with React Native, GitPoint is one of the most feature-rich unofficial GitHub clients that is 100% free.
