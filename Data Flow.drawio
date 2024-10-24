@@ -246,6 +246,30 @@
         <mxCell id="4k-aV7bayQKxP_E58n7r-55" value="Call forecast to Resource Schedule" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="310" y="349" width="120" height="50" as="geometry" />
         </mxCell>
+        <mxCell id="4k-aV7bayQKxP_E58n7r-57" value="" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="-520" y="775" width="10" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="4k-aV7bayQKxP_E58n7r-60" value="" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="-540" y="775" width="10" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="4k-aV7bayQKxP_E58n7r-61" value="" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="-560" y="775" width="10" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="4k-aV7bayQKxP_E58n7r-62" value="" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="-520" y="750" width="10" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="4k-aV7bayQKxP_E58n7r-63" value="" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="-540" y="749" width="10" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="4k-aV7bayQKxP_E58n7r-64" value="" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="-560" y="749" width="10" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="4k-aV7bayQKxP_E58n7r-65" value="" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="470" y="809" width="10" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="4k-aV7bayQKxP_E58n7r-66" value="" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="450" y="809" width="10" height="20" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
