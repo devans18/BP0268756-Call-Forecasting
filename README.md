@@ -31,9 +31,9 @@ Hello and welcome to this git. It is being used to support the development of a 
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [Background](##Background)
-- [Data Diagram](#Data Diagram)
-- [Methodology](#methodology)
+- [Background](#background)
+- [Data Diagram](#data-diagram)
+- [High Level Methodology](#high-level-methodology)
 <!-- - [Contributors](#contributors)
 - [Build Process](#build-process)
 - [Backers](#backers-)
