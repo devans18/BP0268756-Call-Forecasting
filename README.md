@@ -31,22 +31,59 @@ Hello and welcome to this git. It is being used to support the development of a 
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [Features](#features)
-- [Feedback](#feedback)
-- [Contributors](#contributors)
+- [Background](##Background)
+- [Data Diagram](#Data Diagram)
+- [Methodology](#methodology)
+<!-- - [Contributors](#contributors)
 - [Build Process](#build-process)
 - [Backers](#backers-)
 - [Sponsors](#sponsors-)
-- [Acknowledgments](#acknowledgments)
+- [Acknowledgments](#acknowledgments) --!>
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Introduction
 
+Currently, workforce planning for the contact centre requires manual manipulation of forecasts issued by an antiquated system. It is resource intensive and requires a team of strategic forecasters to accurately predict customer contact volumes, and as a consequence, provide resource to address these. 
+This project looks to use machine learning to produce an accurate base forecast that requires minimal adjustment, if any, to suit the needs of the business and customers. This solution will be created in python using the Facebook Prophet **insert link to FB Prophet github** which is a powerful LSTM forecasting model allowing for manipulation and cleansing within the model.
+
+## Background 
+
+What is resource planning
+Why is it important
+What methods are currently used - especially in Finance
+What is machine learning
+What are the benefits
+How do we marry machine learning and forecasting - LSTM
+How will this be applicable to the current issue
+What do we hope to achieve
 
 ## Data Diagram
 
 ![image](https://github.com/user-attachments/assets/32690ffd-8735-4be1-a17c-01223ba29eeb)
+
+## High Level Methodology
+
+A customer calls in to the company. This call is handled by our IVR (Interactive Voice Response) system to help funnel a customer's request.
+This IVR is part of the wider CCC (Cloud Contact Cisco platform), which handles and routes the customers call. From the customers perspective, they will call the main number, be filtered through the IVR and then placed in a queue to speak to an agent. This routing is handled by CCC. 
+
+There are then three systems that the customer's data flows through:
+1. Finess, which allows a call agent to speak to the customer **find details on Finess and reference**
+2. Verint, which handles call recording and provides basic metrics about the call **find details on Verint and reference**
+3. VIM, which captures further metrics about the calls and stores these in a large database **find details on VIM and reference**
+
+Currently, the resource planning team uses Verint to provide a base forecast, which the wider planning team then use to make manual manipulations in Excel, before issuing to the scheduling team to arrange work rotas and shift coverage. The current base forecast has a resolution of daily.
+
+Instead, by extracting the raw performance metrics from VIM, data can be collected to a resolution of 15 minute intervals, allowing for the base forecast to look at intraday forecasting, rather than daily forecasting. 
+
+There is an existing business process that extracts the data from VIM, and places it into a PowerBI tool called TOMI (Telephony Operational MI), which allows for data to be saved in .xlsx format in quarterly chunks. This data can then be re-merged into one continuous dataset, which currently runs back as far as 01/01/2023. 
+_A proposition to both append the data and provide base analytic insight into the raw data has been created in another PowerBI dashboard, however there is scope, should the major project work, to incorporate this into the main solution. _
+Another dataset is created to represent holidays which have skewed the base data, as well as another dataset which will be used to replace raw data with null entries where there has been an unplanned event (incident/IT outtage/news event) which has caused an unexpected change in customer behaviour which is unlikely to be repeated or unable to be forecasted again.
+
+These datasets then fed into a Facebook Prophet based model that will be used to create a future forecast. The most optimal time period to forecast is **define best forecast and discuss why with references. talk about inaccuracies in future forecasts due to the potential in wholescale changes in customer behaviour. Perhaps 2 weeks is appropriate**
+
+Old forecasts will be reviewed against performance, and the model tweaked where appropriate
+
 
 
 <!-- View repository and user information, control your notifications and even manage your issues and pull requests. Built with React Native, GitPoint is one of the most feature-rich unofficial GitHub clients that is 100% free.
