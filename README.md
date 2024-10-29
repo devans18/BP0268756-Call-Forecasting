@@ -26,6 +26,10 @@
 
 Hello and welcome to this git. It is being used to support the development of a call forecasting model as part of a DTS apprenticeship completed through BPP.
 
+[Find out more about the PowerBI Dashboard](PowerBI.md)
+[Find out more about the References](References.md)
+[Notes](Notes.md)
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 ## Table of Contents
